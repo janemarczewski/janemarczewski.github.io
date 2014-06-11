@@ -1,0 +1,13 @@
+.header--nav {
+    ul {
+        list-style: none inside;
+        text-align: right;
+        li {
+            display: inline-block;
+            padding: 1rem;
+        }
+    }
+    a {
+        color: $white;
+    }
+}

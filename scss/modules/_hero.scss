@@ -1,0 +1,17 @@
+.hero {
+    width: 100%;
+    background-color: rgba($yellow, .5);
+    background: url('../img/hero.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 15rem;
+    color: $white;
+    padding: 15rem 1rem 1rem;
+    h1 {
+        width: 40%;
+        height: auto;
+    }
+    svg {
+        max-height:100%;
+        fill: currentColor;
+    }
+}

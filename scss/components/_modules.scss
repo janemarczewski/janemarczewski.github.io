@@ -1,0 +1,34 @@
+.modules--container {
+    width: 97.5%;
+    margin: 1rem auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    .modules--unit {
+        flex: 1 0 25rem;
+        padding: 2rem;
+    }
+    .white {
+        background: $white;
+        color: $darkblue;
+    }
+    .orange {
+        background: $orange;
+        color: $yellow;
+    }
+    .blue {
+        background: $darkblue;
+        color: $white;
+    }
+    .grossyellow {
+        background: $grossyellow;
+        color: white;
+    }
+    .lynchstock {
+        background: url('../img/lynchstock.jpg') no-repeat center center;
+        background-size: cover;
+    }
+}
