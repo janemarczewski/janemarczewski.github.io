@@ -286,11 +286,21 @@ img {
 .header {
   position: fixed;
   display: flex;
+  align-items: center;
   width: 100%;
   text-transform: uppercase;
+  padding: 1rem;
 }
 .header--logo {
   flex: 2;
+  width: 100%;
+  height: auto;
+  padding: 0 1rem;
+}
+.header--logo svg {
+  max-width: 10rem;
+  max-height: 100%;
+  fill: rgba(149, 45, 0, 0.75);
 }
 .header--nav {
   flex: 8;
@@ -302,7 +312,7 @@ img {
 }
 .header--nav ul li {
   display: inline-block;
-  padding: 1rem;
+  padding: .5rem;
 }
 .header--nav a {
   color: #efefef;
@@ -339,7 +349,7 @@ img {
   color: #294447;
 }
 .modules--container .orange {
-  background: rgba(149, 45, 0, 0.75);
+  background: #952d00;
   color: #edaa0c;
 }
 .modules--container .blue {
@@ -388,8 +398,8 @@ img {
 .icon:hover, .icon:focus {
   width: 3rem;
   height: 3rem;
-  fill: rgba(149, 45, 0, 0.75);
-  border: 1px solid rgba(149, 45, 0, 0.75);
+  fill: #952d00;
+  border: 1px solid #952d00;
 }
 
 .home--about {
@@ -425,5 +435,5 @@ img {
 .home--booking {
   color: #efefef;
   padding: 4rem 2rem;
-  background: #294447 url("../img/jane--booking.png") no-repeat top center;
+  background: rgba(41, 68, 71, 0.75) url("../img/jane--booking.png") no-repeat top center;
 }

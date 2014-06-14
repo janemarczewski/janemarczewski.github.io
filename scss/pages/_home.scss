@@ -4,7 +4,7 @@
     }
     &--download {
         width: 100%;
-        background: $orange url('../img/jane--download.png') no-repeat center left;
+        background: rgba($orange, .75) url('../img/jane--download.png') no-repeat center left;
         background-size: cover;
         padding: 2rem;
         color: $white;
@@ -33,6 +33,6 @@
     &--booking {
         color: $white;
         padding: 4rem 2rem;
-        background: $darkblue url('../img/jane--booking.png') no-repeat top center;
+        background: rgba($darkblue, .75) url('../img/jane--booking.png') no-repeat top center;
     }
 }
