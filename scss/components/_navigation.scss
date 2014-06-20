@@ -2,12 +2,16 @@
     ul {
         list-style: none inside;
         text-align: right;
+
         li {
             display: inline-block;
-            padding: .5rem;
+            text-align: center;
+            padding: 2rem 3rem;
+            font-size: 1.25rem;
+            border-left: 1px dashed $orange;
         }
     }
     a {
-        color: $white;
+        color: $orange;
     }
 }

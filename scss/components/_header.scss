@@ -1,15 +1,17 @@
 .header {
     position: fixed;
     display: flex;
-    align-items: center;
     width: 100%;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 0 0 0 1rem;
+    background: rgba($white, .375);
+    border-bottom: 1px dashed $orange;
+    z-index: 9999;
     &--logo {
         flex: 2;
         width: 100%;
         height: auto;
-        padding: 0 1rem;
+        padding: 1rem;
         svg {
             max-width: 10rem;
             max-height:100%;

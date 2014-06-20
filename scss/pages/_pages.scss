@@ -1,0 +1,9 @@
+.page {
+    &--home {
+        .header {
+            &--logo {
+                svg { @extend .hidden; }
+            }
+        }
+    }
+}

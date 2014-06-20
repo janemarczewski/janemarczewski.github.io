@@ -3,12 +3,16 @@
     background-color: rgba($yellow, .5);
     background: url('../img/hero.jpg') no-repeat center center;
     background-size: cover;
-    min-height: 15rem;
+    height: 45rem;
     color: $white;
-    padding: 15rem 1rem 1rem;
+    position: relative;
     h1 {
         width: 40%;
+        max-width: 20rem;
         height: auto;
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
     }
     svg {
         max-height:100%;

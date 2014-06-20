@@ -277,7 +277,7 @@ img {
   height: auto;
 }
 
-.hidden {
+.hidden, .page--home .header--logo svg {
   display: none;
   width: 0;
   height: 0;
@@ -286,16 +286,18 @@ img {
 .header {
   position: fixed;
   display: flex;
-  align-items: center;
   width: 100%;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0 0 0 1rem;
+  background: rgba(239, 239, 239, 0.375);
+  border-bottom: 1px dashed #952d00;
+  z-index: 9999;
 }
 .header--logo {
   flex: 2;
   width: 100%;
   height: auto;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 .header--logo svg {
   max-width: 10rem;
@@ -312,10 +314,13 @@ img {
 }
 .header--nav ul li {
   display: inline-block;
-  padding: .5rem;
+  text-align: center;
+  padding: 2rem 3rem;
+  font-size: 1.25rem;
+  border-left: 1px dashed #952d00;
 }
 .header--nav a {
-  color: #efefef;
+  color: #952d00;
 }
 
 .footer {
@@ -370,13 +375,17 @@ img {
   background-color: rgba(237, 170, 12, 0.5);
   background: url("../img/hero.jpg") no-repeat center center;
   background-size: cover;
-  min-height: 15rem;
+  height: 45rem;
   color: #efefef;
-  padding: 15rem 1rem 1rem;
+  position: relative;
 }
 .hero h1 {
   width: 40%;
+  max-width: 20rem;
   height: auto;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
 }
 .hero svg {
   max-height: 100%;

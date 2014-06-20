@@ -2,8 +2,11 @@
 <html>
 
   {% include head.html %}
-
-    <body>
+    {% if page.id %}
+        <body>
+        {% else %}
+        <body class="page--{{ page.tags}}">
+    {% endif %}
 
     {% include header.html %}
 
