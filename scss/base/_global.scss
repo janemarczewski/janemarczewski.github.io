@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    background: $white; 
+    background: $white;
 }
 img {
     max-width: 100%;
@@ -16,4 +16,12 @@ img {
     display: none;
     width: 0;
     height: 0;
+}
+
+.download {
+    fill: $orange;
+    max-width: 10rem;
+    width: 200px;
+    height: 234.694px;
+
 }

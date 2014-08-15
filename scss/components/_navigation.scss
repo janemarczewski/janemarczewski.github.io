@@ -2,16 +2,25 @@
     ul {
         list-style: none inside;
         text-align: right;
-
+        @include respond-to(handhelds) {
+            text-align: center;
+        }
         li {
             display: inline-block;
             text-align: center;
-            padding: 2rem 3rem;
+            padding: 2rem 1.5rem;
             font-size: 1.25rem;
-            border-left: 1px dashed $orange;
+            letter-spacing: 2px;
+            @include respond-to(handhelds) {
+                padding: 1rem 1.5rem;
+            }
         }
     }
     a {
-        color: $orange;
+        color: $white;
+        &:hover {
+            color: $yellow;
+        }
     }
+
 }

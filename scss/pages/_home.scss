@@ -4,10 +4,9 @@
     }
     &--download {
         width: 100%;
-        background: rgba($orange, .75) url('../img/jane--download.png') no-repeat center left;
-        background-size: cover;
+        background: $white;
         padding: 2rem;
-        color: $white;
+        color: rgba($orange, .75);
     }
     &--downloads_list {
         ul { list-style: none inside;}
@@ -25,7 +24,7 @@
             &::before {
                 content: "\2192";
                 margin-right: .25rem;
-                color: $white;
+                color: $orange;
             }
         }
     }

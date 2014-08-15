@@ -8,3 +8,5 @@ url: "janemarczewski.github.io"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+exclude: ["node_modules", "package.json", "Gruntfile.js", 'scss', 'css/main.css/', 'css/main.prefixed.css/']

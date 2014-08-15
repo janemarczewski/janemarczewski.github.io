@@ -1,21 +1,17 @@
 .hero {
     width: 100%;
     background-color: rgba($yellow, .5);
-    background: url('../img/hero.jpg') no-repeat center center;
-    background-size: cover;
-    height: 45rem;
+    background: url('../img/hero.jpg') no-repeat center center / cover;
+    padding: 18rem 1rem;
     color: $white;
-    position: relative;
     h1 {
-        width: 40%;
-        max-width: 20rem;
-        height: auto;
-        position: absolute;
-        left: 1rem;
-        bottom: 1rem;
-    }
-    svg {
-        max-height:100%;
-        fill: currentColor;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 3rem;
+        font-weight: 700;
+        @include respond-to(handhelds) {
+            font-size: 2rem;
+        }
     }
 }

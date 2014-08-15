@@ -1,24 +1,30 @@
 .header {
-    position: fixed;
     display: flex;
     width: 100%;
     text-transform: uppercase;
     padding: 0 0 0 1rem;
-    background: rgba($white, .375);
-    border-bottom: 1px dashed $orange;
+    background: rgba($orange, .75);
     z-index: 9999;
     &--logo {
         flex: 2;
         width: 100%;
         height: auto;
         padding: 1rem;
+        @include respond-to(handhelds) {
+            text-align: center;
+            padding: 1rem 1rem .5rem;
+        }
         svg {
             max-width: 10rem;
             max-height:100%;
-            fill: rgba($orange, .75);
+            fill: $white;
         }
     }
     &--nav {
         flex: 8;
+    }
+    @include respond-to(handhelds) {
+        flex-direction: column;
+        padding: 0;
     }
 }
