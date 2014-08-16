@@ -9,4 +9,4 @@ url: "janemarczewski.github.io"
 markdown: kramdown
 permalink: pretty
 
-exclude: ["node_modules", 'scss']
+exclude: ["node_modules", 'scss', 'feed.xml']
