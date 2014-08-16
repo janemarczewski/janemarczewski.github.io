@@ -1,0 +1,18 @@
+.home {
+    &--intro {
+        // padding: 1rem;
+        p {
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            font: italic 400 1.5rem $sans-serif;
+            color: $blue;
+            letter-spacing: 2px;
+            max-width: 38rem;
+            margin: 0 auto;
+            @include respond-to(handhelds) {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

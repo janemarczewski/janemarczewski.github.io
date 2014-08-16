@@ -2,17 +2,22 @@
     display: flex;
     width: 100%;
     text-transform: uppercase;
-    padding: 0 0 0 1rem;
-    background: rgba($orange, .75);
+    padding: 1rem;
+    background: $blue;
     z-index: 9999;
+    align-items: center;
+    align-content: center;
     &--logo {
-        flex: 2;
+        flex: 3;
         width: 100%;
         height: auto;
-        padding: 1rem;
+        font-size: 1rem;
+        text-transform: none;
+        font-family: $serif;
+        h1 { margin: 0; }
         @include respond-to(handhelds) {
             text-align: center;
-            padding: 1rem 1rem .5rem;
+            font-size: 1.5rem;
         }
         svg {
             max-width: 10rem;
@@ -21,10 +26,7 @@
         }
     }
     &--nav {
-        flex: 8;
+        flex: 7;
     }
-    @include respond-to(handhelds) {
-        flex-direction: column;
-        padding: 0;
-    }
+    @include respond-to(handhelds) { flex-direction: column; }
 }

@@ -1,164 +1,107 @@
 module.exports = function(grunt) {
-    // Project configuration.
 	require('time-grunt')(grunt);
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-
-        // JavaScript Stuff
-        uglify: {
-            build: {
-                src: ['js/plugins/*.js', 'js/global.js'],
-                //input
-                dest: 'js/build/prime.min.js' //output
-            }
-        },
-
-        // SASS & CSS stuff
-        sass: { // Task
-            dist: { // Target
-                options: { // Target options
-                    style: 'expanded'
-                },
-                files: { // Dictionary of files
-                    'css/main.css': 'scss/main.scss',
-                    // 'destination': 'source'
-                }
-            }
-        },
-        autoprefixer: {
-            options: {
-                browsers: ['last 2 version', 'ie 8', 'ie 9']
-            },
-            single_file: {
-                src: 'css/main.css',
-                dest: 'css/main.prefixed.css'
-            },
-        },
-        cssmin: {
-            minify: {
-                src: 'css/main.prefixed.css',
-                dest: 'css/main.min.css',
-            }
-        },
-        // Jekyll
-        jekyll: {
-			server: {
-				src : '.',
-				dest: './_site',
-				server : true,
-				server_port : 8000,
-				auto : true
-			},
-			dev: {
-				src: '.',
-				dest: './_site'
-			},
-            serve: {                            // Another target
+    grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
+        uglify: {
+            build: {
+                src: ['src/js/lib/*.js', 'src/js/global.js'],
+                dest: 'src/js/build/global.min.js'
+            }
+        },
+        sass: {
+            dist: {
                 options: {
-                    dest: '.jekyll',
-                    drafts: true
+                    style: 'compressed',
+                    sourcemap: true
+                },
+                files: {
+                    'src/css/main.css': 'src/scss/main.scss',
                 }
             }
-		},
-
-        // Images & SVG
-        imagemin: { // Task
-            dynamic: { // Another target
-                files: [{
-                    expand: true,
-                    // Enable dynamic expansion
-                    cwd: 'img/',
-                    // Src matches are relative to this path
-                    src: ['**/*.{png,jpg,gif}'],
-                    // Actual patterns to match
-                    dest: 'img/dist/' // Destination path prefix
-                }]
-            }
-        },
-        svgmin: {
-            options: { // Configuration that will be passed directly to SVGO
-                plugins: [{
-                    removeViewBox: false
-                }],
+        },
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 version', 'ie 8', 'ie 9']
             },
-            dist: {
+            single_file: {
+                src: 'src/css/main.css',
+                dest: 'src/css/main.prefixed.css'
+            },
+        },
+        cssmin: {
+            minify: {
+                src: 'src/css/main.prefixed.css',
+                dest: 'src/css/main.min.css',
+            }
+        },
+		shell: {
+      		jekyllServe: {
+        		command: "jekyll serve --baseurl="
+      		},
+      		jekyllBuild: {
+        		command: "jekyll build"
+      		}
+		},
+        connect: {
+            server: {
+              options: {
+                port: 9001,
+                base: '_site/',
+				open: true,
+                livereload: true
+              }
+            }
+        },
+        imagemin: {
+            dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'img/', // Src matches are relative to this path.
-                    src: ['**/*.svg'], // Actual pattern(s) to match.
-                    dest: 'img/min', // Destination path prefix.
-                    ext: '.min.svg' // Dest filepaths will have this extension.
-        }],
-      },
-    },
+                    cwd: 'src/img--src/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'src/img/'
+                }]
+            }
+        },
+        watch: {
+            scripts: {
+                files: ['src/js/*.js'],
+                tasks: ['uglify'],
+                options: {
+                    spawn: false,
+                    livereload: 35729
+                }
+            },
+            html: {
+                files: ["index.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
+                tasks: ['shell:jekyllBuild'],
+                options: { livereload: 35729 }
+            },
+            img: {
+                files: ['src/img--src/*.**'],
+                tasks: ['imagemin'],
+            },
+            css: {
+                files: ['src/scss/*.scss','src/scss/**/*.scss'],
+                tasks: ['sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild'],
+                options: { livereload: 35729 }
+            },
+        },
+    });
 
-        // Watch & Notify
-        watch: {
-            options: {
-                livereload: true,
-            },
-            scripts: {
-                files: ['js/*.js', 'js/plugins/*.js'],
-                tasks: ['uglify'],
-                options: {
-                    spawn: false,
-                }
-            },
-            css: {
-                files: ['scss/*.scss', 'scss/**/*.scss' ],
-                tasks: ['sass', 'autoprefixer', 'cssmin'],
-                options: {
-                    spawn: false,
-                }
-            },
-            jekyll: {
-				files: ['/*.html'],
-				tasks: ['jekyll:dev']
-			}
-        },
-        notify: {
-            autoprefixer: {
-                options: {
-                    title: 'Autoprefixer',
-                    message: 'All prefixed, sir',
-                }
-            },
-            watch: {
-                options: {
-                    title: 'Task Complete',
-                    // optional
-                    message: 'SASS and Uglify finished running',
-                    //required
-                }
-            },
-            uglify: {
-                options: {
-                    title: 'Uglified',
-                    message: 'U G L Y, You Ain\'t Got No Alibi.',
-                }
-            },
-            cssmin: {
-                options: {
-                    title: 'Minfied',
-                    message: 'CSS is all skinny now.'
-                }
-            }
-        }
-    });
+    // Loaded tasks
+    grunt.loadNpmTasks( 'grunt-contrib-uglify' );
+    grunt.loadNpmTasks( 'grunt-contrib-sass' );
+    grunt.loadNpmTasks( 'grunt-contrib-watch' );
+    grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
+    grunt.loadNpmTasks( 'grunt-contrib-copy' );
+    grunt.loadNpmTasks( 'grunt-contrib-connect' );
+    grunt.loadNpmTasks( 'grunt-contrib-imagemin' );
+    grunt.loadNpmTasks( 'grunt-autoprefixer' );
+    grunt.loadNpmTasks( 'grunt-notify' );
+    grunt.loadNpmTasks( 'grunt-shell' );
 
-    // Registered tasks
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-notify');
-	grunt.loadNpmTasks('grunt-remfallback');
-	grunt.loadNpmTasks('grunt-svgmin');
-    grunt.loadNpmTasks('grunt-jekyll');
-
-    // Default task(s).
-    grunt.registerTask('default', ['uglify', 'sass', 'autoprefixer', 'cssmin', 'svgmin']);
-    grunt.registerTask('dev', ['watch', 'notify:uglify', 'notify:autoprefixer', 'notify:cssmin', 'notify:watch']);
+    // Registered task(s).
+    grunt.registerTask('default', ['notify']);
+    grunt.registerTask('build', ['uglify', 'sass', 'autoprefixer', 'cssmin', 'shell:jekyllBuild', 'imagemin']);
+    grunt.registerTask('dev', ['connect', 'watch']);
 };

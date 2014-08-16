@@ -8,11 +8,11 @@
         li {
             display: inline-block;
             text-align: center;
-            padding: 2rem 1.5rem;
+            padding: 0 1.5rem;
             font-size: 1.25rem;
             letter-spacing: 2px;
             @include respond-to(handhelds) {
-                padding: 1rem 1.5rem;
+                padding: 0 .5rem;
             }
         }
     }
