@@ -8,6 +8,10 @@ html {
 p {
     font-weight: 300;
     font-family: $serif;
+    margin-bottom: 1rem;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 blockquote {
