@@ -6,7 +6,7 @@ baseurl: ""
 url: "janemarczewski.github.io"
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: pretty
 
-exclude: ["node_modules", 'scss', 'feed.xml']
+exclude: ['node_modules', 'scss', 'feed.xml']
