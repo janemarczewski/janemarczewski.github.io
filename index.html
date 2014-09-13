@@ -1,23 +1,51 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="hero">
+    <h1>Jane Marczewski</h1>
 </div>
+<div class="home--intro">
+    <div class="modules--container">
+        <div class="modules--unit">
+            <p>{{ site.description }}</p>
+        </div>
+    </div>
+</div>
+
+<section class="home--booking">
+    <h2 class="titling"><span>Booking</span></h2>
+    <div class="modules--container">
+        <div class="modules--unit">
+            <p>Dude! I totally wanna play your venue! Seriously! I am not saying this in a sarcastic 80s sitcom voice! Seriously! I want to come sing my stinking heart out! Just get me a fucking helicopter! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsa nemo, velit eaque? Unde amet obcaecati magnam ipsum, ut nam sequi architecto quam dolor nulla placeat id blanditiis quidem distinctio?
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="modules--container">
+<div class="modules--unit home--downloads_list">
+    <h3>Download My New Album</h3>
+    <ul>
+        <li><a href="http://rd.io/x/QRrkIyJwLzQ/">Rdio</a></li>
+        <li><a href="https://play.spotify.com/album/4Q3e5eJWEYLTY9OkX3MHcg">Spotify</a></li>
+        <li><a href="https://itunes.apple.com/us/album/ocean-sky-ep/id660362935">iTunes</a></li>
+        <li><a href="http://www.noisetrade.com/janemarczewski">NoiseTrade</a></li>
+    </ul>
+</div>
+</section>
+<section class="modules--container">
+    <blockquote>
+        <p>So, I write a lot of songs. And songs, for me, always tell the truth. Sometimes it’s beautiful, and sometimes not. I take the good ones and I share them.</p>
+    </blockquote>
+</section>
+
+<section class="modules--container">
+    <ul class="modules--unit posts">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+</section>
