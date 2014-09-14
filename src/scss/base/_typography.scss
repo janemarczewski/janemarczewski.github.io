@@ -45,6 +45,7 @@ blockquote {
 a {
     text-decoration: none;
     color: $blue--green;
+    transition: all 375ms linear;
     &:hover {
         color: $blue;
     }

@@ -1,0 +1,18 @@
+.btn {
+	border-radius: .375rem;
+	border: 2px solid;
+	color: #111;
+	display: inline-block;
+	font-family: $sans-serif;
+	letter-spacing: .15rem;
+	margin-bottom: .5rem;
+	padding: .5rem .75rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: none;
+	transition: all 375ms linear;
+	&:hover {
+		color: $blue;
+		background: $blue--green;
+	}
+}

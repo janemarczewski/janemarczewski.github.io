@@ -4,6 +4,10 @@
     background: url('../img/newjaneface.jpg') no-repeat center center / cover;
     padding: 18rem 1rem;
     color: $white;
+    @include respond-to(handhelds) {
+        padding: 7.5rem 0;
+        background: url('../img/newjaneface.jpg') no-repeat top center / contain;
+    }
     h1 {
         text-align: center;
         text-transform: uppercase;

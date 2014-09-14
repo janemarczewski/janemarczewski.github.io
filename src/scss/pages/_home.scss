@@ -15,4 +15,27 @@
             }
         }
     }
+    &--booking {
+        padding: 2rem;
+        background-color: $blue;
+        background: url('../img/jane__booking.jpg') center center / cover;
+        p {
+            font-weight: 700;
+            font-size: 2rem;
+            color: $white;
+            margin: 1rem auto;
+            max-width: 33rem;
+        }
+        .btn {
+            display: block;
+            max-width: 15rem;
+            text-align: center;
+            margin: 1rem auto 0;
+            color: white;
+            font-size: 1.5rem;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
 }
