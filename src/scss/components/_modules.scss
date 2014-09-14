@@ -1,7 +1,7 @@
 .modules--container {
-    width: 95%;
-    margin: 1rem auto;
-    padding: .5rem;
+    width: 100%;
+    // margin: 0 auto;
+    // padding: .5rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,6 +10,6 @@
     align-items: flex-start;
     .modules--unit {
         flex: 1 0 20rem;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 }

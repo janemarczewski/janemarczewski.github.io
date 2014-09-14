@@ -21,8 +21,8 @@ layout: default
 
 
 
-<section class="modules--container">
-    <blockquote>
+<section class="modules--container home--quote">
+    <blockquote class="modules--unit">
         <p>So, I write a lot of songs. And songs, for me, always tell the truth. Sometimes it’s beautiful, and sometimes not. I take the good ones and I share them.</p>
     </blockquote>
 </section>
@@ -37,7 +37,7 @@ layout: default
 <section class="home--downloads">
 <div class="modules--container">
     <div class="modules--unit home--downloads_list">
-        <h3>Download My New Album</h3>
+        <h3>Download My Music</h3>
         <ul>
             <li><a href="http://rd.io/x/QRrkIyJwLzQ/">Rdio</a></li>
             <li><a href="https://play.spotify.com/album/4Q3e5eJWEYLTY9OkX3MHcg">Spotify</a></li>
@@ -48,12 +48,20 @@ layout: default
 </div>
 </section>
 <section class="modules--container">
-    <ul class="modules--unit posts">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    <div class="modules--unit home--press">
+        <p><a href="http://www.lynchburgliving.com/lynchburg-living-virtual-magazine/">The awesome folks at Lynchburg Living, talked to me about my music. Read the issue here.</a></p>
+    </div>
+    <div class="modules--unit home--recents">
+        <h3>Recent Posts</h3>
+          {% for post in site.posts limit:2 %}
+            <article>
+                <h4><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+                <span class="post--full_meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+                <div>
+                    <a class="btn post-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+                </div>
+            </article>
+          {% endfor %}
+        </ul>
+    </div>
 </section>
