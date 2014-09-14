@@ -1,9 +1,14 @@
 html {
     font: 400 100%/1.4 $sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: $text;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
 
 p {
     font-weight: 300;
