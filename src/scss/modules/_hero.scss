@@ -1,22 +1,11 @@
 .hero {
     width: 100%;
-    background-color: rgba($yellow, .5);
-    background: url('../img/newjaneface.jpg') no-repeat center center / cover;
-    padding: 18rem 1rem;
     color: $white;
-    @include respond-to(handhelds) {
-        padding: 7.5rem 0;
-        background: url('../img/newjaneface.jpg') no-repeat top center / contain;
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
     }
-    h1 {
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 10px;
-        font-size: 3rem;
-        font-weight: 700;
-        display: none;
-        @include respond-to(handhelds) {
-            font-size: 2rem;
-        }
-    }
+    h1 { display: none; }
 }
