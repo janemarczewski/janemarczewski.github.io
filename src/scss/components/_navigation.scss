@@ -1,0 +1,26 @@
+.header--nav {
+    ul {
+        list-style: none inside;
+        text-align: right;
+        @include respond-to(handhelds) {
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            text-align: center;
+            padding: 0 1.5rem;
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+            @include respond-to(handhelds) {
+                padding: 0 .5rem;
+            }
+        }
+    }
+    a {
+        color: $white;
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+}

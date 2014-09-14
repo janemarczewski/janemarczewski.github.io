@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 1rem;
+    background: $blue;
+    z-index: 9999;
+    align-items: center;
+    align-content: center;
+    &--logo {
+        flex: 3;
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+        text-transform: none;
+        h1 { margin: 0; }
+        @include respond-to(handhelds) {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        svg {
+            max-width: 10rem;
+            max-height:100%;
+            fill: $white;
+        }
+    }
+    &--nav {
+        flex: 7;
+    }
+    @include respond-to(handhelds) { flex-direction: column; }
+}
