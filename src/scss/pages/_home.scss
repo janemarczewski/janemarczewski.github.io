@@ -1,16 +1,15 @@
 .home {
-    &--quote {
-        max-width: 38rem;
-        margin: 1rem auto;
-    }
     &--intro {
         // padding: 1rem;
+        background: mix($blue, $blue--green, 50%);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         p {
             text-transform: uppercase;
             display: block;
             text-align: center;
             font: italic 400 1.5rem $sans-serif;
-            color: $blue;
+            color: $white;
             letter-spacing: 2px;
             max-width: 38rem;
             margin: 0 auto;
@@ -19,8 +18,21 @@
             }
         }
     }
+    &--audio {
+        background: $blue;
+        color: $white;
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        blockquote {
+            color: $white;
+            &::after {
+                margin-bottom: 2rem;
+            }
+        }
+    }
     &--booking {
-        margin-top: 2rem;
         padding: 2rem;
         background-color: $blue;
         background: url('../img/jane__booking.jpg') center center / cover;

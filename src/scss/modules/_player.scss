@@ -1,0 +1,36 @@
+.player {
+	&--container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: flex-start;
+		align-items: center;
+		margin: .5rem 0;
+	}
+	h3 {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 1.5rem;
+	}
+	svg {
+		max-width: 1rem;
+	}
+	&--controls {
+		flex: 1 0 1rem;
+	}
+	&--title {
+		flex: 6 0 10rem;
+	}
+	progress {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: 100%;
+	}
+	progress[value]::-webkit-progress-value{
+		background: $blue--green;
+	}
+	progress[value]::-webkit-progress-bar {
+		background: mix($blue, $blue--green, 50%);
+	}
+}

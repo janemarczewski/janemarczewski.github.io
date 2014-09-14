@@ -11,21 +11,50 @@ layout: default
         </div>
     </div>
 </div>
-<div class="home--more">
-    <article>
-        <p>Hi, I'm Jane Marczewski. I'm a singer/songwriter. I also nervous-talk and pretend to like other peoples pets.</p>
-    </article>
-
-</div>
-
-
-
-
-<section class="modules--container home--quote">
+<section class="home--more">
+    <div class="modules--container">
+        <div class="modules--unit home--audio player">
+            <h2>Listen</h2>
+            <div plangular="https://soundcloud.com/jane-marczewski/02-i-think-ill-go" class="player--container">
+                <div class="player--controls">
+                    <a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+                    <a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+    </a>
+                </div>
+                <div class="player--title">
+                    <h3>{{ "{{ track.title " }}}}</h3>
+                    <progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+                    <small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+                </div>
+            </div>
+            <div plangular="https://soundcloud.com/jane-marczewski/abraham" class="player--container">
+                <div class="player--controls">
+                    <a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+                    <a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+    </a>
+                </div>
+                <div class="player--title">
+                    <h3>{{ "{{ track.title " }}}}</h3>
+                    <progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+                    <small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+                </div>
+            </div>
+            <blockquote>
+                <p>So, I write a lot of songs. And songs, for me, always tell the truth. Sometimes it’s beautiful, and sometimes not. I take the good ones and I share them.</p>
+            </blockquote>
+        </div>
+        <article class="modules--unit">
+            <section class="entry">
+                <p>Hi, I'm Jane Marczewski. I'm a singer/songwriter. I also nervous-talk and pretend to like other peoples pets.</p>
+            </section>
+        </article>
+    </div>
+</section>
+<!-- <section class="modules--container home--quote">
     <blockquote class="modules--unit">
         <p>So, I write a lot of songs. And songs, for me, always tell the truth. Sometimes it’s beautiful, and sometimes not. I take the good ones and I share them.</p>
     </blockquote>
-</section>
+</section> -->
 <section class="home--booking">
     <div class="modules--container">
         <div class="modules--unit">
