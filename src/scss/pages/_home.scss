@@ -157,6 +157,9 @@
         }
         a {
             color: white;
+            &:hover {
+                color: $blue--green;
+            }
         }
         .btn {
             display: block;
@@ -167,7 +170,6 @@
             color: white;
             font-size: 1rem;
             &:hover {
-                color: $blue--green;
                 background: none;
             }
         }

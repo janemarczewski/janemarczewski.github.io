@@ -5,7 +5,10 @@
         padding: 2rem .5rem;
         a {
             display: inline-block;
-            margin: .25rem 1rem;
+            margin: .25rem .75rem;
+            @include respond-to(handhelds) {
+                margin: .25rem;
+            }
         }
     }
     p {

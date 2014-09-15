@@ -1,0 +1,17 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+<section class="blog--archive">
+	{% for post in site.posts %}
+	    <article class="post--short">
+			<aside>
+				<span class="post--full_meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+			</aside>
+			<section>
+				<h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+			</section>
+		</article>
+	{% endfor %}
+</section>
