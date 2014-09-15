@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 We sat under the stars on a country road, the four of us. On our way home from watching the sun set on mountain cliffs, we stopped on the side of the road to stare into the stars we so rarely get to see.
