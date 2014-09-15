@@ -2,7 +2,7 @@
 
 layout: post
 title: "Beauty in the Not-Yet"
-date: 2014-09-01
+date: 2014-09-14
 
 ---
 
