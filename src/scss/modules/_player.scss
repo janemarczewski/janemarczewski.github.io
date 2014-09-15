@@ -27,10 +27,16 @@
 		-moz-appearance: none;
 		width: 100%;
 	}
-	progress[value]::-webkit-progress-value{
+	progress[value]::-webkit-progress-value {
 		background: $blue--green;
 	}
 	progress[value]::-webkit-progress-bar {
+		background: mix($blue, $blue--green, 50%);
+	}
+	progress[value]::-moz-progress-value {
+		background: $blue--green;
+	}
+	progress[value]::-moz-progress-bar {
 		background: mix($blue, $blue--green, 50%);
 	}
 }
