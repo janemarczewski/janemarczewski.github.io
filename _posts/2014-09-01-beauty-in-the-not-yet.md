@@ -1,8 +1,10 @@
 ---
-published: false
----
 
-### Beauty in the not-yet.
+layout: post
+title: "Beauty in the Not-Yet"
+date: 2014-09-01
+
+---
 
 There is a beauty that intimidates, a beauty that makes us painfully aware of how far we have fallen short. It silences us by the terrible distance between who we are and who we wish to be. This is the designer-home, long-legged-supermodel type of beauty.
 
