@@ -35,7 +35,6 @@ blockquote {
         margin-top: 2rem;
         background: $blue--green;
         display: block;
-        float: left;
         @include respond-to(handhelds) { width: 5rem; }
     }
     p {

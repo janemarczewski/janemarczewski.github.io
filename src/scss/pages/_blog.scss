@@ -1,0 +1,11 @@
+.blog {
+	&--archive {
+		h3 {
+			margin: 1rem 0;
+		}
+		.post--full_meta {
+			opacity: .5;
+		}
+
+	}
+}
