@@ -1,6 +1,5 @@
 .footer {
     padding: 3rem .5rem;
-
     &--socialmedia {
         text-align: center;
         padding: 2rem .5rem;
@@ -8,6 +7,10 @@
             display: inline-block;
             margin: .25rem 1rem;
         }
+    }
+    p {
+        text-align: center;
+        font-family: $sans-serif;
     }
 
 }

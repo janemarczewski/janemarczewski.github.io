@@ -1,0 +1,24 @@
+<div plangular="https://soundcloud.com/jane-marczewski/02-i-think-ill-go" class="player--container">
+	<div class="player--controls">
+		<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+		<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+</a>
+	</div>
+	<div class="player--title">
+		<h3>{{ "{{ track.title " }}}}</h3>
+		<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+		<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+	</div>
+</div>
+<div plangular="https://soundcloud.com/jane-marczewski/abraham" class="player--container">
+	<div class="player--controls">
+		<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+		<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+</a>
+	</div>
+	<div class="player--title">
+		<h3>{{ "{{ track.title " }}}}</h3>
+		<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+		<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+	</div>
+</div>

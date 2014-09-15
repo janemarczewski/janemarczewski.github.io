@@ -32,6 +32,22 @@
             }
         }
     }
+    &--more {
+        padding: 0 !important;
+        background: $blue--green;
+        img {
+            display: block;
+            opacity: .75;
+        }
+        .blurb {
+            padding: 1.625rem 1.5rem;
+            margin-bottom: 2px;
+            p {
+                font: italic 300 1.78rem/1.4 $sans-serif;
+                color: white;
+            }
+        }
+    }
     &--booking {
         padding: 2rem;
         background-color: $blue;
