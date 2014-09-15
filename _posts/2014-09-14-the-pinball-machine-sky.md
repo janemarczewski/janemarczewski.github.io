@@ -1,6 +1,6 @@
 ---
 
-layout:post
+layout: post
 title: "The Pinball Machine Sky"
 date: 2014-09-14
 
