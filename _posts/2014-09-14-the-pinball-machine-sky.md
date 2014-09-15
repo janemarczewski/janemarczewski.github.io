@@ -1,7 +1,9 @@
 ---
+
 layout:post
 title: "The Pinball Machine Sky"
 date: 2014-09-14
+
 ---
 
 We sat under the stars on a country road, the four of us. On our way home from watching the sun set on mountain cliffs, we stopped on the side of the road to stare into the stars we so rarely get to see.
@@ -24,4 +26,4 @@ And you know, sometimes even when we are looking and listening, we still can’t
 
 There (literally) are shooting stars in the sky above your house today.
 
->Jeremiah 29:13 You shall seek me and find me when you seek me with all of your heart.
+> Jeremiah 29:13 You shall seek me and find me when you seek me with all of your heart.
