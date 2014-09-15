@@ -1,7 +1,6 @@
 ---
-published: true
+published: false
 ---
-
 
 ### Beauty in the not-yet.
 
