@@ -1,0 +1,141 @@
+---
+layout: default
+title: Listen
+permalink: /listen/
+---
+<div class="modules--container">
+	<div class="modules--unit">
+		<header class="post--full_header">
+			<h1 class="post--full_title">{{ page.title }}</h1>
+		</header>
+	</div>
+</div>
+<div class="modules--container listen">
+	<div class="modules--unit home--audio player listen--audio">
+		<h2>Ocean&amp;Sky</h2>
+		<div plangular="https://soundcloud.com/jane-marczewski/01-river" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+		<div plangular="https://soundcloud.com/jane-marczewski/02-i-think-ill-go" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+		<div plangular="https://soundcloud.com/jane-marczewski/03-hopelessly" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+		<div plangular="https://soundcloud.com/jane-marczewski/04-wishing-well" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+		<div plangular="https://soundcloud.com/jane-marczewski/05-ocean-sky" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+		<div plangular="https://soundcloud.com/jane-marczewski/06-our-time" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+	</div>
+	<div class="modules--unit home--audio player listen--audio">
+		<h2>Lines EP</h2>
+		<div plangular="https://soundcloud.com/jane-marczewski/abraham" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+		<div plangular="https://soundcloud.com/jane-marczewski/climate" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+		<div plangular="https://soundcloud.com/jane-marczewski/anyone-else" class="player--container">
+			<div class="player--controls">
+				<a ng-click="play()" ng-if="player.playing != track"><svg plangular-icon="play"></svg></a>
+				<a ng-click="pause()" ng-if="player.playing == track"><svg plangular-icon="pause"></svg>
+		</a>
+			</div>
+			<div class="player--title">
+				<h3>{{ "{{ track.title " }}}}</h3>
+				<progress value="{{ "{{ currentTime / duration || 0 " }}}}" ng-click="seek($event)">{{ "{{ currentTime / duration " }}}}</progress>
+				<small ng-if="player.playing == track">{{ "{{ currentTime | prettyTime " }}}} | {{ "{{ duration | prettyTime " }}}}</small>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="home--downloads">
+	<div class="modules--container">
+		<div class="modules--unit home--downloads_list">
+			<h3>Download My Music</h3>
+			<ul>
+				<li><a href="http://rd.io/x/QRrkIyJwLzQ/">Rdio</a></li>
+				<li><a href="https://play.spotify.com/album/4Q3e5eJWEYLTY9OkX3MHcg">Spotify</a></li>
+				<li><a href="https://itunes.apple.com/us/album/ocean-sky-ep/id660362935">iTunes</a></li>
+				<li><a href="http://www.noisetrade.com/janemarczewski">NoiseTrade</a></li>
+			</ul>
+		</div>
+	</div>
+</section>

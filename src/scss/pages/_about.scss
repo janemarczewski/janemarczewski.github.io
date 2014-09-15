@@ -1,0 +1,25 @@
+.about {
+	.modules--unit {
+		padding: 1.5rem 2rem;
+	}
+	h3 {
+		font-family: $serif;
+		font-weight: 700;
+		font-size: 1.25rem;
+		color: $blue--green;
+		&::after {
+			content: "";
+			display: block;
+			width: 4rem;
+			height: 2px;
+			background: $blue;
+		}
+	}
+	.btn {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	&--side {
+		max-width: 15rem;
+	}
+}
