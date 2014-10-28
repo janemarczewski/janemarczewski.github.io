@@ -12,7 +12,7 @@ But after a show is over, this is what happens--at least for me. The applause di
 
 I pack my car, and respond to the Instagram comments. I write my "thank you" tweet, tag the Facebook photos, wash off the makeup, put on mismatching pajamas, the sit on the couch with a plate of whatever I can find in the fridge. My roommates fall asleep and I am alone. No one left to impresss, no one left to prove myself to. 
 
-######Silence. 
+Silence. 
 
 Silence is that friend that always tells the rude truth. I politely avoid her whenever possible. Silence is like a big wave that carries away all the noise and leaves me alone on the shore with all the garbage and broken seashells that are *me*. 
 
