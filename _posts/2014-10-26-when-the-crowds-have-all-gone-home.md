@@ -6,7 +6,7 @@ date: 2014-10-28
 
 ---
 
-Let me just tell you that playing shows is kind of the greatest. It's like having a birthday party where you get all the attention you could ever want. Everyone tells you that you look good, and everything you say is (all of a sudden) funny. People take your picture, and sometimes act like you're really important because youre standing on a stage. 
+Let me just tell you that playing shows is kind of the greatest. It's like having a birthday party where you get all the attention you could ever want. Everyone tells you that you look good, and everything you say is (all of a sudden) funny. People take your picture, and sometimes act like you're really important because you're standing on a stage. 
 
 But after a show is over, this is what happens--at least for me. The applause dies out, I say my thank-yous, smile for photos, and laugh with some strangers. 
 
