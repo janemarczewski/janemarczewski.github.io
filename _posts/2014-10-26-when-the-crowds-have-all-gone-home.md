@@ -1,3 +1,11 @@
+---
+
+layout: post
+title: "When the Crowds Have all Gone Home"
+date: 2014-10-28
+
+---
+
 ####When the Crowds Have all Gone Home
 
 Let me just tell you that playing shows is kind of the greatest. It's like having a birthday party where you get all the attention you could ever want. Everyone tells you that you look good, and everything you say is (all of a sudden) funny. People take your picture, and sometimes act like you're really important because youre standing on a stage. 
