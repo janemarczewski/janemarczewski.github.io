@@ -10,7 +10,7 @@ Let me just tell you that playing shows is kind of the greatest. It's like havin
 
 But after a show is over, this is what happens--at least for me. The applause dies out, I say my thank-yous, smile for photos, and laugh with some strangers. 
 
-I pack my car, and respond to the Instagram comments. I write my "thank you" tweet, tag the Facebook photos, wash off the makeup, put on mismatching pajamas, the sit on the couch with a plate of whatever I can find in the fridge. My roommates fall asleep and I am alone. No one left to impresss, no one left to prove myself to. 
+I pack my car, and respond to the Instagram comments. I write my "thank you" tweet, tag the Facebook photos, wash off the makeup, put on mismatching pajamas, then sit on the couch with a plate of whatever I can find in the fridge. My roommates fall asleep and I am alone. No one left to impress, no one left to prove myself to. 
 
 Silence. 
 
@@ -20,7 +20,7 @@ When I'm silent, I'm forced to look at myself. I can't hide behind makeup and tr
 
 This year, I've spent a lot of time in silence, and not really by my choice. Something I realized is this: I had been so well-known by everyone except myself. I really liked the girl in the photos, and I liked the girl on the stage, and I liked the girl on Instagram, but the girl on the couch with leftovers? Not her.
 
-Sure, it feels safer to duck behind iPhone screens or small talk or anything else we use to appear confident. But isn't it exhausting? Surely, we weren't made for that. We are not all we wish to be--and we aren't everything people think we are. Some of us have even fooled our selves. 
+Sure, it feels safer to duck behind iPhone screens or small talk or anything else we use to appear confident. But isn't it exhausting? Surely, we weren't made for that. We are not all we wish to be--and we aren't everything people think we are. Some of us have even fooled ourselves. 
 
 But silence crashes the party and ruins the costumes. If you don't like yourself when you're alone and silent, you don't like yourself at all. I learned this year to make peace with the *me* that sits alone in silence, because that's the real one. 
 
