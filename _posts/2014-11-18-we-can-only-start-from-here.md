@@ -16,7 +16,9 @@ I used to remember the former me, the woundless and innocent. I used to wish tha
 
 For her heart had never yet been broken into. She hadn't yet been manipulated; she hadn't mistaken passion for love. She hadn't yet broken any promises. She had not been taught to fear. She had not yet learned to saw off friendships before they became unsafe. She hadn't believed that God had betrayed her. She had not yet cradled the lies she thought would save her. She had not yet fallen asleep next to ignored prayers and tragedy.
 
-I used to think that to find rest and healing, I had to go backwards. But I see now that I must move on. I cannot go back to restart before all of the mistakes, nor can I skip over the consequences to start there. **I can only start from here.**
+I used to think that to find rest and healing, I had to go backwards. But I see now that I must move on. I cannot go back to restart before all of the mistakes, nor can I skip over the consequences to start there.
+
+**I can only start from here.**
 
 Most of us have known a time when all our investments have derailed; when we are a heap of laundry soaked in tears; and when we are ashamed to find that we don't know all that we thought we would by now. In a time like that, 
 
@@ -28,5 +30,3 @@ And the strong person continues, "But this is the way things are."
 Then the brave person says, "We can only start from here." 
 
 And the unwavering one says, **"So we will."**
-
-![image of snowy road](/Users/Jane/Documents/janemarczewski.github.io/src/img--src/Snowy Road.JPG)
