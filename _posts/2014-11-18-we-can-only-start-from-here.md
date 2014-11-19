@@ -22,8 +22,7 @@ I used to think that to find rest and healing, I had to go backwards. But I see 
 
 Most of us have known a time when all our investments have derailed; when we are a heap of laundry soaked in tears; and when we are ashamed to find that we don't know all that we thought we would by now. In a time like that, 
 
-the hurting person will say, 
-"this is not how things are supposed to be."
+The hurting person will say, "This is not how things are supposed to be."
  
 And the strong person continues, "But this is the way things are." 
 
